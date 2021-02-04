@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscripcion</title>
+        <!---BOOSTRAP 4, LO OCUPE PARA MOSTRAR LA BARRA DE NAVEGACION-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!--LINK PARA CONECTAR AL ARCHIVO CSS-->
+        <link rel="stylesheet"  href="estilosform.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">--Presentacion--</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#conocenos">Conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#autonomia">Autonomia curricular</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#instalaciones">Instalaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contacto">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#avisos">Avisos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#alumnos">Alumnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="rojo"><a class="nav-link" href="formulario.html">Inscribirse</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="formulario">
+                <form action="guardar.php"  method="POST" enctype="multipart/form-data" target="_blank" class="formu">
+                <br>
+                <h1>Ingrese sus datos...</h1><br>
+                <p>Apellido Paterno: <input type="text"  name="ApellidoPaterno"  placeholder="Apellido Paterno" class="inputama" required></p>
+                <br>
+                <p>Apellido Materno: <input type="text"  name="ApellidoMaterno"  placeholder="Apellido Materno" class="inputama" required></p>
+                <br>
+                <p>Nombre(s): <input type="text"  name="Nombre" placeholder="Nombre" class="inputama" required></p>
+                <br>
+                <p>Sexo:<br>
+                <input name="sexo"  type="radio"  value="Hombre" >Hombre
+                <input name="sexo"  type="radio"  value="Mujer"  required>Mujer</p>
+                <br>
+                <p> Acta De Nacimiento: <br>
+                    <input type="file"  name="ActaNacimiento"  accept="image/png, .jpg, .jpeg" required></p>
+                    <br> 
+                <p> CURP: <br>
+                        <input type="file"  name="CURP"  accept="image/png, .jpg, .jpeg" required></p>
+                        <br> 
+                <p>Fotografia (tama&ntilde;o infantil): <br>
+                    <input type="file"  name="Fotografia"  accept="image/png, .jpg, .jpeg" required></p>
+                    <br>
+                <p>Certificado De Primaria: <br> 
+                    <input type="file"  name="CertificadoPrimaria"  accept="image/png, .jpg, .jpeg" required></p>
+                    <br>
+                <p>Numero De Telefono: <input type="tel"  name="NumeroTelefono" maxlength="10" placeholder="Introduzca los 10 digitos" class="inputama" required></p>
+                    <br>
+                <p>Correo Electronico: <input type="email" size="64" maxlength="64"  name="CorreoElectronicio" placeholder="Introduca su correo electronico" pattern=".+.com" class="inputama" required></p>
+                    <br>
+                
+                <input type="submit"   value="Enviar" class="btn-enviar" >
+                </form>
+        </div>
+    </body>
+</html>

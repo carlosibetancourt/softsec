@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: #2d3436;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    /*width: 90%;*/
+    margin: auto;
+   
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    height: 750px;
+    margin-top: 20px;
+}
+
+/*nav:indeterminate{
+    border: 5px;
+
+}*/
+
+.rojo{
+    background-color: red;
+    color:white;
+    border-radius: 4px;
+}
+
+
+
+/*ERA LA BARRA DE ANTES PERO NO PODIA HACER QUE SE QUEDARA PARA SIEMORE
+.barras{
+    background: #006266;
+    padding: 15px;
+    text-align: right;
+}
+
+.internos li{
+    list-style: none;
+    padding: 5px;
+    font: right 100;
+    font-family: Verdana;
+    display: inline-block;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    border-bottom: 4px solid #2d3436;
+}*/
+
+hr {
+    margin: 10px 0;
+  }
+
+
+
+.titulo h1{
+    padding-top: 180px;
+    font-size: 300%;
+}
+
+.logo{
+    width: 20%;
+    height: 190px;
+    padding-top: 25px;
+}
+
+.cuerpo{
+    background: #f1f2f6;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+.cuerpo div {
+    width: 100%;
+    height: 550px; 
+}
+
+
+
+.cuerpo hr{
+    background-color:  #006266;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 43%;
+  margin-right: 43%;
+  border-style: inset;
+  border-width: 4px;
+  
+}
+
+
+
+
+table{
+    margin: auto;
+}
+
+table tr td{
+    padding: 15px;
+}
+
+footer{
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 10px;
+}
+

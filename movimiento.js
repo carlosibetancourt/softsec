@@ -1,0 +1,10 @@
+//alert("¡ BIENVENIDOS A SU PAGINA WEB !");
+ScrollReveal().reveal('header');
+ScrollReveal().reveal('.titulo');
+ScrollReveal().reveal('#inicio', {delay: 500});
+ScrollReveal().reveal('#conocenos', {delay: 500});
+ScrollReveal().reveal('#autonomia', {delay: 500});
+ScrollReveal().reveal('#instalaciones', {delay: 500});
+ScrollReveal().reveal('#contacto', {delay: 500});
+ScrollReveal().reveal('#avisos', {delay: 500});
+ScrollReveal().reveal('#alumnos', {delay: 500});
