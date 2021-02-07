@@ -10,96 +10,145 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
 
+        <!--Font awesone-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
         <!---BOOSTRAP 4, LO OCUPE PARA MOSTRAR LA BARRA DE NAVEGACION-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     
         <!---link para css-->
         <link rel="stylesheet" href="estilos.css">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">--Presentacion--</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#conocenos">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#autonomia">Autonomia curricular</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#instalaciones">Instalaciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#avisos">Avisos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#alumnos">Alumnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="rojo"><a class="nav-link" href="formulario.html">Inscribirse</a></div>
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-        
-        <!---<nav class="barras" fixed-top>
+    <body> 
+        <div class="btnmenu">
+            <i class="fas fa-bars"></i>
+        </div> 
+        <!--barra de navegacion-->
+        <nav class="barras fixed-top" >
             <ul class="internos">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#conocenos">Conocenos</a></li>
-                <li><a href="#autonomia">Autonomia curricular</a></li>
-                <li><a href="#instalaciones">Instalaciones</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#avisos">Avisos</a></li>
-                <li><a href="#alumnos">Alumnos</a></li>
-                <li><a href="formulario.html">Inscribirse</a></li>
+                <li>
+                  <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                  <a href="#conocenos">Conocenos</a>
+                </li>
+                <li>
+                  <a href="#personal">Personal</a>
+                </li>
+                <li>
+                  <a href="#talleres">Talleres</a>
+                </li>
+                <li>
+                  <a href="#actividades">Actividades escolares</a>
+                </li>
+                <li>
+                  <a href="#instalaciones">Instalaciones</a>
+                </li>
+                <li>
+                  <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                  <a href="#avisos">Avisos</a>
+                </li>
+                <li>
+                  <a class="rojo" href="formulario.html">Inscribirse</a>
+                </li>
             </ul>
-        </nav>-->
-        <hr>
-        <!--Presentacion-->
-    <header>
-    <div class="titulo">
-        <h1>CARLOS I. BETANCOURT</h1>
-        <img src="imagenes/carlos.jpg" class="logo"> 
-        <h1>Secundaria</h1>
-        <p>Ixticpan</p>
+        </nav>
+        
+        <!--Presentacion o inicio-->
+    <header id=inicio>
+    <div class="header">
+        <h1 class="titulo">CARLOS I. BETANCOURT</h1>
+        <img src="imagenes/logotelesecundaria.png" class="logo"> 
+        <h1 class="subtitulo">TeleSecundaria</h1>
+        <h4 class="direcion">AVENIDA REFORMA #1, Ixticpan, Teziutlan, Pue.</h3>
     </div>
     </header>
     <div class="cuerpo">
-        <div>
-        <h1><a  id="inicio">INICIO</a></h1>
-        <hr>
-        </div>
-
-        <div>
-        <h1><a  id="conocenos">CONOCENOS</a></h1>
+        <div class="conocenos">
+        <h1 class="pagtitulo"><a  id="conocenos">CONOCENOS</a></h1>
         <hr>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae repellendus tenetur quaerat molestiae labore nemo nulla voluptates. Officia, sequi officiis voluptatum a assumenda inventore architecto magnam sed cupiditate necessitatibus velit?
         </p>
         <hr>
         </div>
 
-        <div>
-        <h1><a  id="autonomia">AUTONOMIA CURRICULAR</a></h1>
+        <div class="personal">
+          <h1 class="pagtitulo"><a  id="personal">PERSONAL</a></h1>
+          <hr>
+        <section>
+        <div class="center" >
+              <div class="maestros">MAESTRO: CARLOS HERNANDEZ ESPINOZA</div>
+              <div class="grados">PRIMERO "A"</div>
+          
+              <td class="grados">PRIMERO "B"</td>
+              <td class="maestros">MAESTRA: IMELDA HERNANDEZ ESPINOZA</td>
+          </tr>
+          <tr>
+              <td class="maestros">MAESTRA: MARIA INES BELLO NAVARRO</td>
+              <td class="grados">SEGUNDO "A"</td>
+          </tr>
+          <tr>
+              <td class="grados">SEGUNDO "B"</td>
+              <td class="maestros">MAESTRA: SILVIA PATRICIA LAZARO LEON</td>
+         </tr>
+          <tr>
+              <td class="maestros">MAESTRA: LORENA PERYAÑEZ DE LA LUZ</td>
+              <td class="grados">TERCERO "A"</td>
+          </tr>
+           <tr>
+              <td class="grados">TERCERO "B"</td>
+              <td class="maestros">MAESTRA: JUDITH REGINA HERNANDEZ PALACIOS</td>
+          </tr>
+          <tr>
+              <td class="maestros">MAESTRO: MIGUEL ANGEL GONZALES MIRANDA</td>
+              <td class="grados">EDUCACION FISICA</td>
+          </tr>
+          <tr>
+              <td class="grados">APOYO ADMINISTRATIVO</td>
+              <td class="maestros">MONICA GIOVANY CARREON ARELLANO</td>
+          </tr>
+          <tr>
+              <td class="maestros">MARIA DEL CARMEN ROCHA RIVERA</td>
+              <td class="grados">APOYO DE INTENDENCIA</td>
+          </tr>
+          <tr>
+              <td class="grados">VELADOR</td>
+              <td class="maestros">NAZARIO CADENA VELAZQUEZ</td>
+          </tr>
+          <tr>
+              <td>Direccion</td>
+              <td> <img src=".." class="tamañoimg"></td>
+          </tr>
+        </table>
+        </section>
+          <hr>
+        </div>
+
+        <div class="talleres">
+          <h1 class="pagtitulo"><a id="talleres">TALLERES</a></h1>
+          <a type="button" href:"#tecno" class="btn btn-outline-secondary">TECNOLOGICOS</a>
+          <a type="button" href="#artisticos" class="btn btn-outline-secondary">ARTISTICOS</a>
+          <section id="tecno">
+              <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
+              <div class="tallerestex">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, iusto aliquam dolorum, suscipit illo omnis officia totam voluptatibus corporis ducimus eaque, aliquid non nobis natus ex facere ut magnam eum ad. Necessitatibus nihil commodi nesciunt nostrum repudiandae! Harum sunt, libero asperiores labore rem maiores laborum iste eveniet accusantium animi! Quis.</div>
+          </section>
+          <section id="artisticos">
+              <div class="talleresimg"><img src="./imagenes/estu1b.jpg" alt=""></div>
+              <div class="tallerestex">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam porro modi quidem rerum suscipit quae numquam similique nobis qui, accusantium omnis corporis iure iusto vitae soluta impedit delectus molestiae nisi minima vero eligendi sunt voluptatem hic repellendus. Vel dolor tempora voluptate possimus, quaerat ipsa fuga reprehenderit soluta quod temporibus recusandae?</div>
+          </section>
+          </div>
+
+        <div class="actividades">
+        <h1 class="pagtitulo"><a  id="actividades">ACTIVIDADES ESCOLARES</a></h1>
         <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, autem.
         </p>
         </div>
 
-        <div>
-        <h1><a  id="instalaciones">INSTALACIONES</a></h1>
+        <div class="instalaciones">
+        <h1 class="pagtitulo"><a  id="instalaciones">INSTALACIONES</a></h1>
         <hr>
         <p>galeria de fotos
         </p>
@@ -111,8 +160,8 @@
         <hr>
         </div>
 
-        <div>
-        <h1><a  id="contacto">CONTACTO</a></h1>
+        <div class="contacto">
+        <h1 class="pagtitulo"><a  id="contacto">CONTACTO</a></h1>
         <hr>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, id!
         </p>
@@ -131,19 +180,14 @@
         <hr>
         </div>
 
-        <div>
-        <h1><a  id="avisos">AVISOS</a></h1> 
+        <div class="avisos">
+        <h1 class="pagtitulo"><a  id="avisos">AVISOS</a></h1> 
         <hr>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt inventore non reiciendis repellendus, sunt est?
         </p>
         </div>
 
-        <div>
-        <h1><a id="alumnos">ALUMNOS</a></h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae!
-        </p>
-        </div>
+        
 
     </div>
         <footer>

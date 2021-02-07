@@ -11,25 +11,65 @@ body{
 }
 
 .rojo{
-    background-color: red;
+    background-color: #6D214F;
     color:white;
+    padding: 5px 5px;
     border-radius: 4px;
 }
 
 
+/*ERA LA BARRA DE ANTES PERO NO PODIA HACER QUE SE QUEDARA PARA SIEMORE*/
+.barras{
+    background: #006266;
+    padding: 15px;
+    text-align: right;
+    height: 60px;
+}
+
+.internos li{
+    list-style: none;
+    padding: 5px;
+    font: right 100;
+    font-family: Verdana;
+    display: inline-block;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    border-bottom: 4px solid #2d3436;
+}*/
+
+hr {
+    margin: 10px 0;
+  }
+
+.form_titulo{
+    padding-top: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
 .formulario {
     width: 98%;
     max-width: 1000px;
-    background: #2d3436;
-    color: white;
+    background: white;
+    color: black;
     margin: auto;
     padding: 30px;
 }
 
+.etiquetas_center{
+    padding: 0px 200px;
+}
 
 
 .inputama{
-    width: 100%;
+    width: 95%;
     height:5px;
     margin-bottom: 25px;
     padding: 15px;
@@ -45,6 +85,8 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 input[type=submit]:active {

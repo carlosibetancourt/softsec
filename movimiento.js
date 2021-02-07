@@ -2,9 +2,11 @@
 ScrollReveal().reveal('header');
 ScrollReveal().reveal('.titulo');
 ScrollReveal().reveal('#inicio', {delay: 500});
-ScrollReveal().reveal('#conocenos', {delay: 500});
-ScrollReveal().reveal('#autonomia', {delay: 500});
+ScrollReveal().reveal('.conocenos', {delay: 500});
+ScrollReveal().reveal('#personal', {delay: 500});
+ScrollReveal().reveal('.tamañoimg', {delay: 500});
+ScrollReveal().reveal('#talleres', {delay: 500});
+ScrollReveal().reveal('#actividades', {delay: 500});
 ScrollReveal().reveal('#instalaciones', {delay: 500});
 ScrollReveal().reveal('#contacto', {delay: 500});
 ScrollReveal().reveal('#avisos', {delay: 500});
-ScrollReveal().reveal('#alumnos', {delay: 500});

@@ -9,51 +9,51 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">--Presentacion--</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html#inicio">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#conocenos">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#autonomia">Autonomia curricular</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#instalaciones">Instalaciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#contacto">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#avisos">Avisos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#alumnos">Alumnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="rojo"><a class="nav-link" href="formulario.html">Inscribirse</a></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <nav class="barras fixed-top" >
+            <ul class="internos">
+                <li>
+                  <a href="index.html#inicio">Inicio</a>
+                </li>
+                <li>
+                  <a href="index.html#conocenos">Conocenos</a>
+                </li>
+                <li>
+                  <a href="index.html#personal">Personal</a>
+                </li>
+                <li>
+                  <a href="index.html#talleres">Talleres</a>
+                </li>
+                <li>
+                  <a href="index.html#actividades">Actividades escolares</a>
+                </li>
+                <li>
+                  <a href="index.html#instalaciones">Instalaciones</a>
+                </li>
+                <li>
+                  <a href="index.html#contacto">Contacto</a>
+                </li>
+                <li>
+                  <a href="index.html#avisos">Avisos</a>
+                </li>
+                <li>
+                  <a class="rojo" href="formulario.html">Inscribirse</a>
+                </li>
+            </ul>
+        </nav>
+        
         <div class="formulario">
                 <form action="guardar.php"  method="POST" enctype="multipart/form-data" target="_blank" class="formu">
                 <br>
-                <h1>Ingrese sus datos...</h1><br>
-                <p>Apellido Paterno: <input type="text"  name="ApellidoPaterno"  placeholder="Apellido Paterno" class="inputama" required></p>
+                <h1 class="form_titulo">¡Inscribase Ahora!</h1><br>
+                <div class="etiquetas_center">
+                <p>Apellido Paterno: <br>
+                  <input type="text"  name="ApellidoPaterno"  placeholder="Apellido Paterno" class="inputama" required></p>
                 <br>
-                <p>Apellido Materno: <input type="text"  name="ApellidoMaterno"  placeholder="Apellido Materno" class="inputama" required></p>
+                <p>Apellido Materno: <br>
+                   <input type="text"  name="ApellidoMaterno"  placeholder="Apellido Materno" class="inputama" required></p>
                 <br>
-                <p>Nombre(s): <input type="text"  name="Nombre" placeholder="Nombre" class="inputama" required></p>
+                <p>Nombre(s): <br>
+                  <input type="text"  name="Nombre" placeholder="Nombre" class="inputama" required></p>
                 <br>
                 <p>Sexo:<br>
                 <input name="sexo"  type="radio"  value="Hombre" >Hombre
@@ -71,12 +71,15 @@
                 <p>Certificado De Primaria: <br> 
                     <input type="file"  name="CertificadoPrimaria"  accept="image/png, .jpg, .jpeg" required></p>
                     <br>
-                <p>Numero De Telefono: <input type="tel"  name="NumeroTelefono" maxlength="10" placeholder="Introduzca los 10 digitos" class="inputama" required></p>
+                <p>Numero De Telefono: <br>
+                   <input type="tel"  name="NumeroTelefono" maxlength="10" placeholder="Introduzca los 10 digitos" class="inputama" required></p>
                     <br>
-                <p>Correo Electronico: <input type="email" size="64" maxlength="64"  name="CorreoElectronicio" placeholder="Introduca su correo electronico" pattern=".+.com" class="inputama" required></p>
+                <p>Correo Electronico: <br>
+                  <input type="email" size="64" maxlength="64"  name="CorreoElectronicio" placeholder="Introduca su correo electronico" pattern=".+.com" class="inputama" required></p>
                     <br>
+                </div>
                 
-                <input type="submit"   value="Enviar" class="btn-enviar" >
+                <input class="btn-enviar"  type="submit"   value="Enviar" >
                 </form>
         </div>
     </body>
