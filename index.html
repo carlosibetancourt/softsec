@@ -16,15 +16,14 @@
 
         <!---BOOSTRAP 4, LO OCUPE PARA MOSTRAR LA BARRA DE NAVEGACION-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+
         <!---link para css-->
         <link rel="stylesheet" href="estilos.css">
     </head>
     <body> 
-        <div class="btnmenu">
-            <i class="fas fa-bars"></i>
-        </div> 
         <!--barra de navegacion-->
+        <input type="checkbox" id="menubarra">
+        <label class="fas fa-bars" for="menubarra"></label>
         <nav class="barras fixed-top" >
             <ul class="internos">
                 <li>
@@ -66,43 +65,121 @@
       <section class="personal">
         <h1 class="pagtitulo"><a  >PERSONAL</a></h1>
         <hr>
+        <p>Se menciona cada cargo con su respectivo encargado...</p>
+        
       <div class="gridpersonal" >
+            <!--class="gridmaestrosizq es mi clase contenedor"-->
             <div class="gridmaestrosizq">
-              <div class="grados">PRIMERO A</div>
-              <div class="maestros">MAESTRO: CARLOS HERNANDEZ ESPINOZA </div>
+              <figure>
+                <div class="grados">PRIMERO A</div> 
+              <div class="capa">
+                <h5>MAESTRO:</h5>
+                <h5>CARLOS HERNANDEZ ESPINOZA</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestroscen">
-              <div class="grados">PRIMERO B</div>
-              <div class="maestros">MAESTRO: IMELDA HERNANDEZ ESPINOZA </div>
+              <figure>
+                <div class="grados">PRIMERO B</div> 
+              <div class="capa">
+                <h5>MAESTRA:</h5>
+                <h5>IMELDA HERNANDEZ ESPINOZA</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestrosder">
-              <div class="grados">SEGUNDO A</div>
-              <div class="maestros">MAESTRO: MARIA INES BELLO NAVARRO </div>
+              <figure>
+                <div class="grados">SEGUNDO A</div> 
+              <div class="capa">
+                <h5>MAESTRA:</h5>
+                <h5>MARIA INEZ BELLO NAVARRO</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestrosizq">
-              <div class="grados">SEGUNDO B</div>
-              <div class="maestros">MAESTRO: SILVIA PATRICIA LAZARO LEON </div>
+              <figure>
+                <div class="grados">SEGUNDO B</div> 
+              <div class="capa">
+                <h5>MAESTRA:</h5>
+                <h5>SILVIA PATRICIA LAZARO LEON</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestroscen">
-              <div class="grados">TERCERO A</div>
-              <div class="maestros">MAESTRO: LORENA PERYAÑEZ DE LA LUZ </div>
+              <figure>
+                <div class="grados">TERCERO A</div> 
+              <div class="capa">
+                <h5>MAESTRA:</h5>
+                <h5>LORENA PERYAÑEZ DE LA LUZ</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestrosder">
-              <div class="grados">TERCERO B</div>
-              <div class="maestros">MAESTRO: JUDITH REGINA HERNANDEZ PALACIOS</div>
+              <figure>
+                <div class="grados">TERCERO B</div> 
+              <div class="capa">
+                <h5>MAESTRA:</h5>
+                <h5>JUDIHT REGINA HERNANDEZ PALACIOS</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestrosizq">
-              <div class="grados" id="talleres">EDUCACION FISICA</div>
-              <div class="maestros">MAESTRO: MIGUEL ANGEL GONZALES MIRANDA</div>
+              <figure>
+                <div class="grados">EDUCACION FISICA</div> 
+              <div class="capa">
+                <h5>MAESTRO:</h5>
+                <h5>MIGUEL ANGEL GONZALEZ MIRANDA</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestroscen">
-              <div class="grados">PRIMERO A</div>
-              <div class="maestros">MAESTRO: Lorem, ipsum dolor. </div>
+              <figure>
+                <div class="grados">APOYO ADMINISTRATIVO</div> 
+              <div class="capa">
+                <h5>LICENCIADA:</h5>
+                <h5>MONICA GIOVANY CARREON ARELLANO</h5>
+              </div>
+            </figure>
             </div>
+
             <div class="gridmaestrosder">
-              <div class="grados">PRIMERO A</div>
-              <div class="maestros">MAESTRO: Lorem, ipsum dolor. </div>
+              <figure>
+                <div class="grados">APOYO DE INTENDENCIA</div> 
+              <div class="capa">
+                <h5>SEÑORA:</h5>
+                <h5>MARIA DEL CARMEN ROCHA RIVERA</h5>
+              </div>
+            </figure>
             </div>
+
+            <div class="gridmaestrosizq">
+              <figure>
+                <div class="grados">RESPONSABLES DEL DESAYUNADOR</div> 
+              <div class="capa">
+                <h5>SEÑORAS:</h5>
+                <h5>GUADALUPE <br>
+                ELSA OLIVARES GARCIA</h5>
+              </div>
+            </figure>
+            </div>
+
+            <div class="gridmaestroscen">
+              <figure>
+                <div class="grados" id="talleres">VELADOR</div> 
+              <div class="capa">
+                <h5>SEÑOR:</h5>
+                <h5>NAZARIO CADENA VAZQUEZ</h5>
+              </div>
+            </figure>
+            </div>
+          
             
       </div>
     </section>
@@ -110,38 +187,91 @@
       <!--Talleres-->
       <section class="talleres">
         <h1 class="pagtitulo"><a >TALLERES</a></h1>
-      <nav>
-        <a type="button" href="#tecno" class="btn btn-outline-secondary">TECNOLOGICOS</a>
-        <a type="button" href="index2.html#talleres" class="btn btn-outline-secondary">ARTISTICOS</a>
-      </nav>
+     <!--<nav>
+        <a type="button" href="#talleres" class="btn btn-outline-secondary">TECNOLOGICOS</a>
+        <a type="button" href="#artisticos" class="btn btn-outline-secondary">ARTISTICOS</a>
+      </nav>-->
       <div class="gridtalleres">
+        <!--comienzan los talleres tecnologicos-->
+        <section>
         <h3 id="tecno">TECNOLOGICOS</h3>
         <div class="tallerestitle">COMPUTACION</div>
         <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
         <div class="tallerestxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
 
         <div class="tallerestitle">COCINA</div>
-        <div class="tallerestxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
         <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
+        <div class="tallerestxt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
 
         <div class="tallerestitle">MANUALIDADES</div>
         <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
+        <div class="tallerestxt" id="artisticos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
+      </section>
+
+        <!--comienzan los talleres artisticos-->
+        <section>
+        <h3 >ARTISTICOS</h3>
+        <div class="tallerestitle">MUSICA</div>
+        <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
+        <div class="tallerestxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
+
+        <div class="tallerestitle">DANZA</div>
+        <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
+        <div class="tallerestxt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
+
+        <div class="tallerestitle">PINTURA</div>
+        <div class="talleresimg"><img src="./imagenes/estu1a.jpg" alt=""></div>
         <div class="tallerestxt" id="instalaciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil reprehenderit illum temporibus voluptates facere labore, aspernatur eos veritatis vitae accusantium dolores beatae delectus fugiat, velit nulla perspiciatis quaerat.</div>
+      </section>
+        <!--<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a type="button" href="#talleres" class="btn btn-danger">REGRESAR A TALLERES</a>
+        </div>-->
       </section>
 
       <!--Instalaciones-->
       <section>
         <div class="instalaciones">
         <h1 class="pagtitulo"><a >INSTALACIONES</a></h1>
-        <hr>
-        <p>GALERIA DE FOTOS
-        </p>
-        <img src="./imagenes/estu1b.jpg" width="n" height="n">
-        <img src="./imagenes/estu2a.jpg" width="n" height="n">
-        <img src="./imagenes/estu2b.jpg" width="n" height="n">
-        <img src="./imagenes/estu3a.jpg" width="n" height="n">
-        <img src="./imagenes/estu3b.jpg" width="n" height="n">
-        <hr>
+          
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/estufisica.jpg" class="d-block w-100 instaimg" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/estuintendente.jpg" class="d-block w-100 instaimg" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/estuvelador.jpg" class="d-block w-100 instaimg" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
         </div>
       </section>
 
@@ -185,6 +315,8 @@
  <!--link para Sroolll-->
  <script src="https://unpkg.com/scrollreveal"></script>    
  <script src="movimiento.js"></script>
+
+ 
         
     </body>
    

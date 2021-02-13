@@ -12,3 +12,5 @@ ScrollReveal().reveal('.gridtalleres', {delay: 500});
 ScrollReveal().reveal('.istalaciones', {delay: 500});
 ScrollReveal().reveal('.contacto', {delay: 500});
 ScrollReveal().reveal('.fa', {delay: 500});
+
+

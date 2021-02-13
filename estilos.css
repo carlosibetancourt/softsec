@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 body{
@@ -30,7 +30,7 @@ header{
 
 /*barra de navegacion*/
 .barras{
-    background: #151515;
+    background:#151515;
     padding: 15px;
     text-align: right;
     height: 60px;
@@ -71,9 +71,11 @@ hr {
  /*presentacion o inicio*/
 
 .titulo {
-    padding-top: 100px;
-    font-size: 400%;
+    width: 30%;
+    padding-top: 50px;
+    font-size: 350%;
     font-weight: 700;
+    margin: auto;
 }
 
 .logo{
@@ -83,9 +85,11 @@ hr {
 }
 
 h4{
+    width: 30%;
     padding-top: 50px;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 50;
+    margin: auto;
 }
 
 /*toda la pagina restante o cuerpo*/
@@ -106,7 +110,7 @@ h4{
 .personal{
     padding: 10px 0;
     width:100%;
-    height: 1150px;
+    height: 1350px;
     background: #f1f2f6;
     
 }
@@ -116,10 +120,6 @@ h4{
     color: white;
 }
 
-.gridpersonal div:hover{
-    border: 3px solid #f1c40f;
-}
-
 .gridpersonal{
     padding-top: 20px;
     display: grid;
@@ -127,45 +127,172 @@ h4{
     gap: 30px;
     grid-template-rows: repeat(10,1fr);
     grid-template-rows: minmax(250px,300px);
-    justify-items: center;
 }
 
-
+/*comienza la parte izquierda*/
 .gridmaestrosizq{
     justify-self: end;
-    display: grid;
-    grid-template-rows: repeat(2,50%);
-    border: 2px solid black;
+}
+
+.gridmaestrosizq{
+    position: relative;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+
+}
+
+.gridmaestrosizq figure .grados{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.gridmaestrosizq figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.gridmaestrosizq figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.gridmaestrosizq figure:hover > .capa h5{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.gridmaestrosizq figure .capa h5{
+    color: white;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+
+}
+
+/*comienza la parte central*/
+.gridmaestroscen{
+    justify-self: center;
 }
 
 .gridmaestroscen{
-    justify-self: center;
-    display: grid;
-    grid-template-rows: repeat(2,50%);
-    border: 2px solid black;
+    position: relative;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+
+}
+
+.gridmaestroscen figure .grados{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.gridmaestroscen figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.gridmaestroscen figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.gridmaestroscen figure:hover > .capa h5{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.gridmaestroscen figure .capa h5{
+    color: white;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+
+}
+
+/*comienza la parte derecha*/
+.gridmaestrosder{
+    justify-self: start;
 }
 
 .gridmaestrosder{
-    justify-self: start;
-    display: grid;
-    grid-template-rows: repeat(2,50%);
-    border: 2px solid black;
-}
-
-.maestros{
-
+    position: relative;
+    height: 250px;
     width: 300px;
-    height: 150px;
-    padding: 50px;
-    text-align: center;
-    font-size: 20px;
-    color: black;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+
 }
+
+.gridmaestrosder figure .grados{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.gridmaestrosder figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.gridmaestrosder figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.gridmaestrosder figure:hover > .capa h5{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.gridmaestrosder figure .capa h5{
+    color: white;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+
+}
+
 
 .grados{
-    
-    width: 300px;
-    height:150px;
     padding-top: 50px;
     text-align: center;
     background:#6D214F;
@@ -173,11 +300,14 @@ h4{
     font-size: 40px;
 }
 
+
+
 /*seccion talleres*/
 .talleres{
     width: 100%;
-    height: 1350px;
+    height: 1700px;
     background: #dff9fb;
+    overflow: hidden;
 }
 
 .pagtitulo{
@@ -205,8 +335,8 @@ h3{
 }
 
 .tallerestitle{
-    grid-column: 1/3;
-    padding:20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
@@ -216,6 +346,8 @@ h3{
     justify-self: start;
     padding-top: 20px;
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 .cuerpo hr{
@@ -229,9 +361,20 @@ h3{
   border-width: 4px;
 }
 
+/*intalaciones imagnes*/
 .instalaciones{
     width: 100%;
     height: 700px;
+}
+
+.carousel{
+    width: 50%;
+    margin: auto;
+}
+
+.instaimg{
+    width:45%;
+    height: 400px;
 }
 
 /*redes sociales*/
@@ -274,46 +417,23 @@ footer a:hover{
     color: #74CE06;
 }
 
-@media (max-wihdt: 700px){
-.barras ul.internos{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #182C61;
-    height: 100%;
-    padding: 30px;
-    opacity: .9;
-}
-
-header{
-
-    width: 100%;
-    height: 750px;
-}
-    .barras{
-        font-size: 20px;
+@media (max-width:500px){
+    header{
+        width: 100%;
+        height:350px;
     }
-}
 
-@media (max-wihdt: 500px){
-
-    .barras ul.internos{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #182C61;
-        height: 100%;
-        padding: 30px;
-        opacity: .9;
+    .gridpersonal{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        grid-template-rows: repeat(10,1fr);
     }
     
-    
-    .logo{
-        width: 10%;
-        height: 10px;
-        padding-top: 0px;
-    }
+
 }
+
+
+
     
