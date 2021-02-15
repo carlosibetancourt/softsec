@@ -456,6 +456,7 @@ border-width: 4px;
 
 /*derechos reservados*/
 footer{
+  width: 100%;
   background: black;
   color: white;
   text-align: center;
@@ -525,13 +526,14 @@ footer a:hover{
   .nav-main ul.nav-menu-right {
     margin-right: 50px;
   }
-  .titulo {
+
+.titulo {
     width: 30%;
     padding-top: 50px;
     font-size: 300%;
     font-weight: 700;
     text-align: center;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .logo{
@@ -583,24 +585,49 @@ h4{
 
 }
 
-@media (max-width: 500px) {
-.news-cards {
-  grid-template-columns: 1fr;
+@media (max-width: 450px) {
+
+.menu-btn {
+  top: 13px;
+  right: 152px; 
+  }
+
+.titulo {
+    width: 30%;
+    padding-top: 60px;
+    font-size: 300%;
+    font-weight: 700;
+    margin-left: 50px;
 }
 
-.cards-banner-one .content,
-.cards-banner-two .content {
-  width: 100%;
-  padding: 60px 20px;
-}
-.footer-links .footer-container {
-  grid-template-columns: 1fr;
-
+.logo{
+    width: 80%;
+    height: 250px;
+    padding-top: 50px;
+    margin-left: 75px;
 }
 
-.footer-links .footer-container ul {
-  text-align: center;
+h4{
+  font-size: 150%;
 }
+
+.pagtitulo{
+  padding-top: 20px;
+}
+
+.personal{
+    height: 3350px;
+}
+
+.talleresimg{
+  padding-left: 1px;
+}
+  
+.instaimg{
+    width: 90%;
+    height: 300px;
+}
+
 }
 
 

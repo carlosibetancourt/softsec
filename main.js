@@ -7,7 +7,7 @@ ScrollReveal().reveal('.personal', { delay: 500 });
 ScrollReveal().reveal('.talleres', { delay: 500 });
 ScrollReveal().reveal('.instalaciones', { delay: 500 });
 ScrollReveal().reveal('.contacto', { delay: 500 });
-ScrollReveal().reveal('footer', { delay: 500 });
+
 
 
 
