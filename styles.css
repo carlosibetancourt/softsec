@@ -8,11 +8,8 @@
 body {
   
   font-family: "Oswald", sans-serif;
-  background-color: #000000;
-  /* Pattern from https://www.heropatterns.com/ */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  
-  color: #fff;
+  background-color: #f5f6fa;
+  color: black;
   font-size: 16px;
 }
 
@@ -63,12 +60,13 @@ ul {
 
 .nav-main ul li a:hover {
   border-bottom: 2px solid #fff;
+  font-size: 20px;
   color: #f1c40f;
 }
 
 .nav-main ul.nav-menu {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 600px;
 }
 
 hr {
@@ -126,7 +124,7 @@ h4{
 /*seccion personal*/
 .personal{
   padding: 10px 0;
-  height: 1350px;
+  height: 1000px;
   background: #f1f2f6;
   color: #000000;
 }
@@ -482,6 +480,7 @@ footer a:hover{
 
   .menu-btn {
     display: block;
+    color: white;
 
   position: fixed;
   top: 10px;
@@ -496,7 +495,9 @@ footer a:hover{
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
 }
-
+.nav-main ul.nav-menu {
+  margin-left: 20px;
+}
 
   .nav-main>ul.nav-menu{
     display: block;
@@ -510,6 +511,10 @@ footer a:hover{
     opacity: 0.9;
     transform: translateX(-500px);
     transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-main ul li:hover {
+    background: black;
   }
 
   .nav-main ul.nav-menu li {
@@ -555,7 +560,7 @@ h4{
 }
 
 .personal{
-    height: 3300px;
+    height: 1500px;
 }
 
 .gridpersonal {
@@ -564,7 +569,7 @@ h4{
 }
 
 .talleres{
-  height: 2500px;
+  height: 2200px;
 }
 
 .gridtalleres {
@@ -576,12 +581,12 @@ h4{
 }
 
 .instalaciones{
-  height: 500px;
+  height: 400px;
 }
   
 .d-block{
   width: 60%;
-  height: 300px;
+  height: 100px;
   padding-top: 40px;
 }
 
@@ -631,7 +636,7 @@ h4{
 }
 
 .personal{
-    height: 3350px;
+    height: 2150px;
 }
 
 .talleresimg{
